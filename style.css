@@ -53,6 +53,7 @@ li>a {
 li>a:hover {
     text-decoration: none;
     color: #111111;
+    border-bottom: #000000 2px solid;
 }
 
 div.container#slideshow {
@@ -66,9 +67,65 @@ div.carousel-caption.d-none.d-md-block {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-a.carousel-link {
+a.carousel-link,
+a.btn-jumbotron {
     text-decoration: none;
     background-color: black;
     color: white;
     padding: 10px 10px;
+}
+
+div.cards,
+div.cards2 {
+    position: absolute;
+    top: 600px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+div.cards2 {
+    top: 200vh;
+}
+
+div.container#jumbotron {
+
+    position: absolute;
+    top: 1000px;
+
+}
+
+#jumbotron>.jumbotron {
+    background-image: url(img/jumbotron.webp);
+    background-size: cover;
+    height: 50vh;
+}
+
+div.cards>div.card,
+div.cards2>div.card {
+    margin: 10px 10px;
+}
+
+a.card-link {
+    padding: 10px 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: -190vh;
+    left: 0;
+    right: 0;
+    background-color: #eeeeee;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+
+.content>h5 {
+    font-size: 0.9rem;
+}
+
+footer>.content>ul {
+    list-style: none;
 }
